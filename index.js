@@ -66,11 +66,13 @@ function checkWin(player, row, col) {
 function showWinner(player) {
     const messageElement = document.getElementById('message');
     messageElement.textContent = 'Player ' + player + ' wins!';
+    displayResetButton();
 }
 
 function showDraw() {
     const messageElement = document.getElementById('message');
     messageElement.textContent = 'Jocul s-a încheiat cu rezultat de egalitate!';
+    displayResetButton();
 }
 
 function resetGame() {
@@ -88,4 +90,19 @@ function resetGame() {
             tictactoe[rowIndex][colIndex] = '';
         });
     });
+
+    hideResetButton();
 }
+
+function displayResetButton() {
+    const resetButton = document.getElementById('reset-button');
+    resetButton.classList.remove('hidden');
+}
+
+function hideResetButton() {
+    const resetButton = document.getElementById('reset-button');
+    resetButton.classList.add('hidden');
+}
+
+// Adaugă un event listener pentru butonul de reset
+document.getElementById('reset-button').addEventListener('click', resetGame);

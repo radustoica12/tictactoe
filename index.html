@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joc X și O</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TicTacToe</title>
 </head>
 <body>
-    <h1>Joc X și O</h1>
-    <div id="message"></div> 
+    <div id="header">
+        <h1>TicTacToe</h1>
+    </div>
     <table>
         <tr>
-            <td><button id="button00" class="cell"></button></td>
-            <td><button id="button01" class="cell"></button></td>
-            <td><button id="button02" class="cell"></button></td>
-        </tr>
-        
-        <tr>
-            <td><button id="button10" class="cell"></button></td>
-            <td><button id="button11" class="cell"></button></td>
-            <td><button id="button12" class="cell"></button></td>
+            <td><button id="button00" class="game-button"></button></td>
+            <td><button id="button01" class="game-button"></button></td>
+            <td><button id="button02" class="game-button"></button></td>
         </tr>
         <tr>
-            <td><button id="button20" class="cell"></button></td>
-            <td><button id="button21" class="cell"></button></td>
-            <td><button id="button22" class="cell"></button></td>
+            <td><button id="button10" class="game-button"></button></td>
+            <td><button id="button11" class="game-button"></button></td>
+            <td><button id="button12" class="game-button"></button></td>
+        </tr>
+        <tr>
+            <td><button id="button20" class="game-button"></button></td>
+            <td><button id="button21" class="game-button"></button></td>
+            <td><button id="button22" class="game-button"></button></td>
         </tr>
     </table>
+    <div id="message"></div>
+    <button id="reset-button" class="hidden">Reset Game</button>
     <script src="index.js"></script>
 </body>
 </html>

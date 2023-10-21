@@ -1,5 +1,104 @@
-button{
-    width: 200px;
-    height: 200px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+/* Stil pentru butoane */
+
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
 }
 
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+td:not(:last-child) {
+    border-right: 6px solid #ccc; /* Linii interioare orizontale */
+}
+
+tr:not(:last-child) td {
+    border-bottom: 6px solid #ccc; /* Linii interioare verticale */
+}
+
+.game-button {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-button:hover {
+    background-color: #ddd;
+}
+
+/* Stil pentru mesaj */
+#message {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Stil pentru butonul de reset */
+#reset-button {
+   background-color: #008cba;
+   font-size: 18px;
+   border: none;
+   color: #fff;
+   padding: 10px 20px;
+   text-align: center;
+   display: block;
+   margin: 30px auto;
+   border-radius: 5px;
+   cursor: pointer
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden:hover{
+    background-color: #008cba;
+}
+
+h1{
+    color: orangered;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+
+/* Stilurile pentru ecranele mai mari de 768px */
+@media (min-width: 768px) {
+    table {
+        width: 50%; /* Setați o lățime de 50% pentru tabel pe ecrane mai mari */
+    }
+    
+    td {
+        width: auto; /* Lăsați celulele să aibă lățimea implicită pe ecrane mai mari */
+    }
+    
+    /* Alte stiluri specifice pentru ecrane mai mari */
+}
+
+/* Stilurile pentru ecranele mai mici de 768px (mobile) */
+@media (max-width: 767px) {
+    table {
+        width: 100%; /* Tabelul ocupă întreaga lățime pe ecrane mai mici */
+    }
+
+    td {
+        width: auto; /* Lăsați celulele să aibă lățimea implicită pe ecrane mai mici */
+    }
+
+    /* Alte stiluri specifice pentru ecrane mai mici */
+}
